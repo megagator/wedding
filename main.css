@@ -1,3 +1,23 @@
+:root {
+  --blue: #3d7496;
+  --cursive-font: "Notera", serif;
+  --header-font: "Cinzel", system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
+  --readable-font: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('fonts/Cinzel.woff2'),
+       url('fonts/Cinzel.woff'),
+       url('fonts/Cinzel.ttf')
+}
+@font-face {
+  font-family: 'Notera';
+  src: url('fonts/Notera.woff2'),
+       url('fonts/Notera.woff'),
+       url('fonts/Notera.ttf')
+}
+
 body {
   background-color: #4a525a;
   font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
