@@ -19,14 +19,16 @@
 }
 
 body {
-  background-color: #4a525a;
-  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
+  background-color: white;
+  background-image: url('images/sandpaper.png');
+  font-family: var(--readable-font);
+  color: var(--blue);
   /* min-height: 100vh; */
   margin: 0;
   padding: 1rem;
 }
 
-main {
+main .container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -34,7 +36,15 @@ main {
 }
 
 h1 {
-  color: white;
+  color: var(--blue);
+  font-size: 4rem;
+  font-family: var(--header-font);
+  text-align: center;
+}
+h2 {
+  color: var(--blue);
+  font-size: 4.25rem;
+  font-family: var(--cursive-font);
   text-align: center;
 }
 
@@ -58,7 +68,6 @@ p {
   margin: 1rem;
   flex-basis: 230px;
   text-align: left;
-  color: white;
   font-size: 3rem;
   font-weight: bold;
   text-transform: lowercase;
