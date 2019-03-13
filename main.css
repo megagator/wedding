@@ -50,7 +50,8 @@ h2 {
 
 img {
   display: block;
-  width: 70%;
+  max-width: 70%;
+  max-height: 90vh;
   max-width: 1000px;
   height: auto;
   box-shadow: 0 0 12px rgba(0,0,0,0.3);
@@ -92,7 +93,7 @@ p i {
   img {
     width: 100%;
   }
-  main {
+  main .container {
     flex-direction: column;
   }
 }
