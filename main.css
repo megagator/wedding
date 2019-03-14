@@ -92,6 +92,8 @@ p i {
 @media (max-width: 900px) {
   img {
     width: 100%;
+    height: auto;
+    max-height: none;
   }
   main .container {
     flex-direction: column;
