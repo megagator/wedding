@@ -5,22 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Hannah & Mike</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css?v1.2.2" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css?v1.2.2" />
 </head>
 <body>
   <main>
     <h1>Hannah & Mike</h1>
     <h2>are getting hitched</h2>
-    <div class="container">
-      <img src="images/save-the-date.jpg" alt="Hannah and Mike"/>
-      <p id="countdown">Summer 2019</p>
-    </div>
-  </main>
+    <section class="countdown">
+      <div class="timer-container">
+        <img class="imagey" src="/images/save-the-date.jpg" alt="Hannah and Mike"/>
+        <p id="countdown">Summer 2019</p>
+      </div>
+    </section>
 
+    <section class="registry">
+      <h2 class="dark">We're registered at...</h2>
+      <div class="container">
+        <a class="registery-item" href="https://www.amazon.com/wedding/mike-reinhard-hannah-stoker-orlando-august-2019/registry/260B2VBVY89D7">
+          <img src="/svg/amazon.svg" alt="amazon.com">
+        </a>
+        <a class="registery-item" href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/547286125?eventType=Wedding">
+          <img src="/svg/bedbathbeyond.svg" alt="bedbathbeyond.com">
+        </a>
+        <a class="registery-item" href="https://www.crateandbarrel.com/gift-registry/hannah-stoker-and-mike-reinhard/r5963049">
+          <img src="/svg/cratebarrel.svg" alt="crateandbarrel.com">
+        </a>
+      </div>
+    </section>
+  </main>
+    
   <footer>
-    <script src="moment.js"></script>
-    <script src="moment-duration-format.js"></script>
-    <script src="main.js?v2" async defer></script>
+    <script src="/js/moment.js"></script>
+    <script src="/js/moment-duration-format.js"></script>
+    <script src="/js/main.js?v2" async defer></script>
   </footer>
 </body>
 </html>

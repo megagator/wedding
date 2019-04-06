@@ -1,5 +1,7 @@
 :root {
   --blue: #3d7496;
+  --grey: #ccc;
+  --dark: #111;
   --cursive-font: "Notera", serif;
   --header-font: "Cinzel", system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
   --readable-font: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -7,32 +9,40 @@
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('fonts/Cinzel.woff2'),
-       url('fonts/Cinzel.woff'),
-       url('fonts/Cinzel.ttf')
+  src: url('../fonts/Cinzel.woff2'),
+       url('../fonts/Cinzel.woff'),
+       url('../fonts/Cinzel.ttf')
 }
 @font-face {
   font-family: 'Notera';
-  src: url('fonts/Notera.woff2'),
-       url('fonts/Notera.woff'),
-       url('fonts/Notera.ttf')
+  src: url('../fonts/Notera.woff2'),
+       url('../fonts/Notera.woff'),
+       url('../fonts/Notera.ttf')
 }
 
 body {
   background-color: white;
-  background-image: url('images/sandpaper.png');
+  background-image: url('../images/sandpaper.png');
   font-family: var(--readable-font);
   color: var(--blue);
   /* min-height: 100vh; */
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
-main .container {
+.timer-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  
+  padding: 0 2.7%;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  padding: 4rem 0;
 }
 
 h1 {
@@ -49,8 +59,11 @@ h2 {
   text-align: center;
   margin-top: 0;
 }
+h2.dark {
+  color: var(--dark);
+}
 
-img {
+.imagey {
   display: block;
   max-width: 70%;
   max-height: 90vh;
@@ -93,7 +106,7 @@ p i {
 }
 
 @media (max-width: 900px) {
-  img {
+  .imagey {
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -102,7 +115,7 @@ p i {
   p {
     width: 100%;
   }
-  main .container {
+  .timer-container {
     flex-direction: column;
   }
 }
@@ -118,3 +131,37 @@ p i {
     width: 30%;
   }
 }
+
+
+/* Registry */
+
+
+.registry {
+  background-color: var(--grey);
+  background-image: url('../images/sandpaper.png');
+}
+
+.registry .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 900px;
+  padding: 0 2.7%;
+  margin: auto;
+}
+
+.registery-item {
+  display: block;
+  width: 31%;
+  filter: grayscale(1);
+  opacity: 0.5;
+
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.registery-item:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
