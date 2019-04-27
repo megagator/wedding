@@ -65,7 +65,7 @@ h2.dark {
 
 .imagey {
   display: block;
-  max-width: 70%;
+  width: 70%;
   max-height: 90vh;
   max-width: 1000px;
   height: auto;
