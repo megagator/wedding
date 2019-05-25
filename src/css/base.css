@@ -1,0 +1,16 @@
+/* seems to load out of order */
+/* @import-normalize; bring in normalize.css styles */
+
+body {
+  background-color: white;
+  background-image: var(--texture);
+  font-family: var(--readable-font);
+  color: var(--blue);
+  /* min-height: 100vh; */
+  margin: 0;
+  padding: 1rem 0;
+}
+
+section {
+  padding: 4rem 0;
+}

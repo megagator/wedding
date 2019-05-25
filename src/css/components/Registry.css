@@ -1,0 +1,34 @@
+/* Registry */
+
+
+.registry {
+  background-color: var(--grey);
+  background-image: var(--texture);
+}
+
+.registry .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 900px;
+  padding: 0 2.7%;
+  margin: auto;
+}
+
+.container:hover .registery-item {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.registery-item {
+  display: block;
+  width: 31%;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.registery-item.registery-item:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+

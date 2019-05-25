@@ -1,0 +1,43 @@
+.countdown {
+  width: 30%;
+  margin: 1rem;
+  flex-basis: 230px;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.countdown span {
+  width: 50%;
+  display: inline-block;
+  padding-right: 0.2rem;
+  text-align: right;
+  font-family: var(--header-font)
+}
+.countdown i {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2rem;
+  display: inline-block;
+  width: 50%;
+  padding-left: 0.2rem;
+}
+
+.countdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+@media (max-width: var(--large)) {
+  .count-down {
+    width: 100%;
+  }
+}
+
+@media (max-width: var(--small)) {
+  .count-down span {
+    width: 30%;
+  }
+}
