@@ -27,6 +27,9 @@
   padding: 0.5rem;
   transition: filter 0.3s, opacity 0.3s;
 }
+.registery-item.amazon {
+  margin-top: 1.2rem; /* align with Crate and Barrel logo*/
+}
 
 .registery-item.registery-item:hover {
   filter: grayscale(0);
