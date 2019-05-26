@@ -1,6 +1,10 @@
 /* seems to load out of order */
 /* @import-normalize; bring in normalize.css styles */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   background-image: var(--texture);

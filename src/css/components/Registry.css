@@ -23,7 +23,8 @@
 
 .registery-item {
   display: block;
-  width: 31%;
+  width: 33.333%;
+  padding: 0.5rem;
   transition: filter 0.3s, opacity 0.3s;
 }
 
@@ -32,3 +33,20 @@
   opacity: 1;
 }
 
+@media (max-width: 475px) {
+  .registry .container { 
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .registery-item {
+    width: 50%;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .registery-item {
+    width: 66%;
+    padding: 1.5rem 1rem;
+  }
+}

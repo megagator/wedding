@@ -7,10 +7,6 @@
   --header-font: "Cinzel", system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
   --readable-font: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
 
-  /* Breakpoints */
-  --small: 400px;
-  --med: 400px;
-
   /* relative to this file */
   --texture: url('../images/sandpaper.png');
 }

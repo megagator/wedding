@@ -29,7 +29,7 @@ h2.dark {
   color: var(--dark);
 }
 
-@media (max-width: var(--small)) {
+@media (max-width: 475px) {
   h1 {
     font-size: 10vw;
   }

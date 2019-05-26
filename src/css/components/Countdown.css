@@ -2,7 +2,7 @@
   width: 30%;
   margin: 1rem;
   margin-left: 2rem;
-  flex: 0 0 230px;
+  flex: 0 0 200px;
   text-align: left;
   font-size: 3rem;
   font-weight: bold;
@@ -10,18 +10,18 @@
 }
 
 .countdown span {
-  width: 50%;
+  width: 34%;
   display: inline-block;
   padding-right: 0.2rem;
   text-align: right;
   font-family: var(--header-font)
 }
 .countdown i {
+  width: 66%;
+  display: inline-block;
   font-style: normal;
   font-weight: 100;
   font-size: 2rem;
-  display: inline-block;
-  width: 50%;
   padding-left: 0.2rem;
 }
 
@@ -31,14 +31,19 @@
   align-items: baseline;
 }
 
-@media (max-width: var(--large)) {
-  .count-down {
-    width: 100%;
+@media (max-width: 600px) {
+  .countdown {
+    font-size: 2.5rem
   }
 }
 
-@media (max-width: var(--small)) {
-  .count-down span {
-    width: 30%;
+@media (max-width: 475px) {
+  .countdown {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .countdown span,
+  .countdown i {
+    width: 50%;
   }
 }

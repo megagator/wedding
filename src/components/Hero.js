@@ -11,7 +11,9 @@ class Hero extends PureComponent {
         <h2>are getting hitched</h2>
         <section className='hero'>
           <div className='timer-container'>
-            <img className='imagey' src={hero} alt='Hannah and Mike' />
+            <div className='imagey-wrapper'>
+              <img className='imagey' src={hero} alt='Hannah and Mike' />
+            </div>
             <Cooutdown />
           </div>
         </section>
