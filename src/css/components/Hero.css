@@ -10,9 +10,10 @@
 
 .imagey {
   display: block;
-  max-height: 90vh;
-  max-width: 800px;
   height: auto;
+  max-height: 90vh;
+  min-height: 350px;
+  max-width: 800px;
   box-shadow: 0 0 12px rgba(0,0,0,.3);
   object-fit: contain;
 }
