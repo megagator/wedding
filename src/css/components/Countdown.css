@@ -1,7 +1,7 @@
 .countdown {
   width: 30%;
   margin: 1rem;
-  flex-basis: 230px;
+  flex: 0 0 230px;
   text-align: left;
   font-size: 3rem;
   font-weight: bold;
