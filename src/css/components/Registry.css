@@ -45,6 +45,9 @@
     width: 50%;
     padding: 1.5rem 1rem;
   }
+  .registery-item.amazon {
+    margin-top: 0; /* undo align with Crate and Barrel logo*/
+  }
 }
 
 @media (max-width: 374px) {
