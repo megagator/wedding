@@ -1,0 +1,171 @@
+.rsvp {
+  background-color: var(--blue);
+  color: white;
+  padding-top: 2rem;
+  font-size: 1.25rem;
+  font-family: var(--header-font)
+}
+
+.rsvp .container {
+  max-width: 500px;
+  padding: 0 2.7%;
+  margin: auto;
+}
+
+.rsvp h2 {
+  font-size: 10rem;
+  margin-bottom: 4rem;
+  line-height: 1;
+}
+
+.form-item {
+  margin: 1.75rem 0;
+}
+
+.form-item.error {
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 0.5rem;
+}
+
+
+input[type=text] {
+  font-family: var(--readable-font);
+  font-size: 1.125rem;
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+  border-bottom: 2px solid var(--real-white);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input[type=text]::placeholder {
+  font-family: var(--readable-font);
+  color: var(--trans-white)
+}
+
+input[type=text].error {
+  border-color: var(--red)
+}
+
+input:active,
+input:focus {
+  outline: none;
+  background-color: var(--blue-selected)
+}
+
+input[type=radio] {
+  margin-right: 0.35rem;
+  vertical-align: 0.6ex;
+}
+
+
+label {
+  padding: 1rem 0.5rem;
+  margin: -1rem -0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+label + label {
+  margin-left: 1rem;
+}
+
+.radio-label:focus-within,
+.select-label:focus-within {
+  background-color: var(--blue-selected);
+  outline: none;
+}
+
+select {
+  margin-right: 0.5rem;
+  font-size: 1.125rem;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  color: var(--white);
+  padding: 0.4rem 0.75rem;
+  padding-right: 0.65rem;
+}
+.sel-1 {
+  padding-right: 0.55rem;
+}
+
+select:disabled,
+.disabled-select {
+  color: var(--grey);
+  cursor: not-allowed;
+}
+
+input[name=song] {
+  margin-top: 0.75rem;
+}
+
+.is-loading.is-loading {
+  color: transparent;
+  position: relative;
+  cursor: wait;
+}
+
+.is-loading.is-loading::before {
+  content: none;
+}
+
+.is-loading::after {
+  content:'';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10rem;
+  background-color: var(--blue);
+  opacity: 0.6;
+  
+  animation: pulse 1.33s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: translate(-50%, -50%) scale(0.1);
+  } 50% { 
+    transform: translate(-50%, -50%) scale(1.0);
+  }
+}
+
+.error-message {
+  background-color: var(--red);
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  display: inline-block;
+  /* color: var(--red);
+  font-family: var(--readable-font) */
+}
+
+.error-message pre {
+  white-space: pre-wrap;
+}
+
+.error-message:empty {
+  display: none;
+}
+
+.submit-help {
+  font-family: var(--readable-font);
+  background-color: var(--grey);
+  padding: 0.8rem 1rem;
+  margin: 2rem 0;
+  font-size: 1.125rem;
+  color: var(--white);
+}
+
+.submit-help p {
+  font-family: var(--header-font);
+  margin: 0 0 1rem;
+}
+.submit-help a {
+  color: var(--white)
+}

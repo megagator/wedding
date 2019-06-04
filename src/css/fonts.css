@@ -28,6 +28,21 @@ h2 {
 h2.dark {
   color: var(--dark);
 }
+h2.light {
+  color: var(--white);
+}
+
+h3 {
+  color: var(--blue);
+  font-size: 2rem;
+  font-family: var(--header-font);
+  text-align: center;
+  margin-top: 0;
+}
+
+.title {
+  font-family: var(--header-font);
+}
 
 @media (max-width: 475px) {
   h1 {
@@ -35,5 +50,8 @@ h2.dark {
   }
   h2 {
     font-size: 12vw;
+  }
+  h2 {
+    font-size: 8vw;
   }
 }

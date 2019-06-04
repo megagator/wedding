@@ -37,7 +37,7 @@ class Countdown extends Component {
   }
 
   observe () {
-    console.log(this.cdContainer.current)
+    // console.log(this.cdContainer.current)
     const options = {
       rootMargin: '0px',
       threshold: [0, 0.1]

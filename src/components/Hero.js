@@ -8,7 +8,8 @@ class Hero extends PureComponent {
     return (
       <>
         <h1>Hannah & Mike</h1>
-        <h2>are getting hitched</h2>
+        <h2 className='dark'>are getting hitched</h2>
+        <h3>August 3rd, 2019 at eighteen hundred thirty</h3>
         <section className='hero'>
           <div className='timer-container'>
             <div className='imagey-wrapper'>

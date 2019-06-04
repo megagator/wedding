@@ -12,9 +12,83 @@ body {
   color: var(--blue);
   /* min-height: 100vh; */
   margin: 0;
-  padding: 1rem 0;
+  padding: 0;
+  line-height: 1.35;
 }
 
 section {
-  padding: 4rem 0;
+  padding: 8rem 0;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  margin: 1rem 0;
+  background-color: var(--blue);
+  border-radius: 5px;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--header-font);
+  font-size: 1.25rem;
+  transition: background-color 0.2s, color 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.button.white {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  left: 2%;
+  top: 6%;
+  width: 96%;
+  height: 88%;
+  background-color: var(--white);
+  border-radius: 3px;
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.button.white::before {
+  background-color: var(--blue);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--blue);
+  outline: none;
+}
+
+.button.white:hover,
+.button.white:focus {
+  color: var(--white);
+  outline: none;
+}
+
+.button:hover::before,
+.button:focus::before {
+  transform: scale(1)
+}
+
+/* stupid google maps */
+div:focus {
+  outline: 2px solid var(--white)
 }

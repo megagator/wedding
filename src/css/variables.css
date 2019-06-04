@@ -1,7 +1,16 @@
 :root {
-  --blue: #3d7496;
-  --grey: #ccc;
+  --blue: #3D7496;
+  --blue-selected: hsl(203, 42%, 55%);
+  --red: #963D48;
+  --brown: #965F3D;
+  --gold: #96893d;
+
+  --grey: #4A525A;
+  --white: #eee;
+  --real-white:#fff;
+  --trans-white: rgba(255, 255, 255, 0.4);
   --dark: #111;
+  --trans-dark: rgba(46, 47, 47, 0.7);
 
   --cursive-font: "Notera", serif;
   --header-font: "Cinzel", system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;

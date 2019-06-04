@@ -1,0 +1,51 @@
+.map {
+  padding: 0;
+  position: relative;
+  background-color: var(--blue);
+}
+
+.mapbox {
+  /* background-color: var(--blue);
+  background-image: var(--texture); */
+  height: 60vh;
+  min-height: 400px;
+}
+
+.marker {
+  transform: translate(-57%, -100%);
+  width: 30px;
+}
+.marker-icon {
+  box-sizing: border-box;
+  background-color: var(--blue);
+  padding: 0.75rem;
+  color: white;
+  border-radius: 10rem;
+  border: 3px solid white;
+  box-shadow: 0 0 12px rgba(0,0,0, 0.3);
+  opacity: 0.85;
+  
+  animation-name: pulse_animation;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  30% { transform: scale(1); }
+  40% { transform: scale(1.28); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1.15); }
+  80% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+
+@media (max-width: 768px) {
+  .mapbox {
+    /* height: 40vh; */
+  }
+}

@@ -1,6 +1,9 @@
 import React, { PureComponent } from 'react'
 import Hero from './Hero'
 import Registry from './Registry'
+import Map from './Map'
+import RSVP from './RSVP'
+import Footer from './Footer'
 
 class App extends PureComponent {
   render () {
@@ -8,6 +11,9 @@ class App extends PureComponent {
       <main>
         <Hero />
         <Registry />
+        <Map />
+        <RSVP />
+        <Footer />
       </main>
     )
   }
