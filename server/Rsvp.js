@@ -21,6 +21,8 @@ class Rsvp {
   }
 
   static async add ({ name, attending, guests, song, ip, userAgent }) {
+    if (!song) song = null
+
     const sql = `
       INSERT INTO rsvp (name, attending, guests, song, ip, user_agent) VALUES (?,?,?,?,?,?)
     `

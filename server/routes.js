@@ -5,7 +5,7 @@ async function add (json, ip, agent) {
     name: validateString(json.name, 'name'),
     attending: validateAttending(json.attending),
     guests: validateGuests(json.guests),
-    song: validateString(json.song, 'song'),
+    song: json.song,
     ip: ip,
     userAgent: agent
   }

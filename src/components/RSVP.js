@@ -171,7 +171,11 @@ class RSVP extends Component {
 
   success () {
     this.setState({
-      modalActive: true
+      modalActive: true,
+      error: null,
+      nameError: false,
+      attendError: false,
+      errorCount: 0
     })
   }
 
