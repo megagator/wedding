@@ -12,10 +12,11 @@
 }
 
 .dinner {
-  font-family: var(--header-font)
+  font-family: var(--header-font);
 }
 
 .address {
+  font-family: var(--header-font);
   font-size: 1.125rem;
   color: var(--dark);
   line-height: 1.35;

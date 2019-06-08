@@ -1,14 +1,14 @@
 .map {
   padding: 0;
   position: relative;
-  background-color: var(--blue);
+  background-color: var(--blue-light);
 }
 
 .mapbox {
   /* background-color: var(--blue);
   background-image: var(--texture); */
   height: 60vh;
-  min-height: 400px;
+  min-height: 30rem;
 }
 
 .marker {

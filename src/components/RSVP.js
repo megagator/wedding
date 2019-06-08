@@ -243,7 +243,7 @@ class RSVP extends Component {
                 </label>
               </div>
               <div className='form-item'>
-                <label>
+                <label className='song-input'>
                   I promise to dance if you play:
                   <input type='text' name='song' value={this.state.song} placeholder={`"Can't Help Falling In Love" by Elvis`} onChange={this.updateSong} />
                 </label>

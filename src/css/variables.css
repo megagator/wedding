@@ -1,7 +1,8 @@
 :root {
   --blue: #4C7390;
-  --blue-selected: hsl(203, 42%, 55%);
+  --blue-selected: rgba(92, 151, 188, 0.7);
   --blue-light: #C8DBE7;
+  --trans-blue-light: rgba(200, 219, 231, 0.85);
   --red: #963D48;
   --brown: #965F3D;
   --gold: #96893d;
@@ -9,7 +10,8 @@
   --grey: #4A525A;
   --white: #eee;
   --real-white:#fff;
-  --trans-white: rgba(255, 255, 255, 0.4);
+  --trans-white-4: rgba(255, 255, 255, 0.4);
+  --trans-white-6: rgba(255, 255, 255, 0.66);
   --dark: #111;
   --trans-dark: rgba(46, 47, 47, 0.7);
 

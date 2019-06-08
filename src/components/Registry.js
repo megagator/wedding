@@ -8,7 +8,7 @@ class Registry extends PureComponent {
   render () {
     return (
       <section className='registry'>
-        <h2 className='dark'>We're registered at...</h2>
+        <h2 className='light'>We're registered at...</h2>
         <div className='container'>
           <a className='registery-item amazon' href='https://www.amazon.com/wedding/mike-reinhard-hannah-stoker-orlando-august-2019/registry/260B2VBVY89D7'>
             <img src={amazon} alt='amazon.com' />

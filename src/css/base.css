@@ -16,6 +16,20 @@ body {
   line-height: 1.35;
 }
 
+main {
+  display: block;
+  overflow: hidden;
+}
+
+main::before {
+  content: var(--leaf-big);
+  position: absolute;
+  top: -15rem;
+  right: -10rem;
+  transform: rotate(15deg);
+  z-index: -1;
+}
+
 section {
   padding: 8rem 0;
 }

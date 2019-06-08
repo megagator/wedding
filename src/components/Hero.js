@@ -12,7 +12,7 @@ class Hero extends PureComponent {
           <div className='content'>
             <h1>Hannah & Mike</h1>
             <h2 className='dark'>are getting hitched</h2>
-            <h3>August 3rd, 2019 at eighteen hundred thirty</h3>
+            <h3>August 3rd, 2019 <span className='de-emphasize'>at</span> Eighteen Hundred Thirty</h3>
           </div>
         </section>
         <section className='hero'>

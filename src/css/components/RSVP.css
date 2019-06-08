@@ -1,22 +1,37 @@
 .rsvp {
-  background-color: var(--blue);
+  background-color: var(--blue-light);
   /* background-image: var(--texture-board); */
-  color: white;
+  color: var(--blue);
   padding-top: 2rem;
   font-size: 1.25rem;
-  font-family: var(--header-font)
+  font-family: var(--header-font);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+}
+
+.rsvp::before {
+  content: var(--leaf);
+  position: absolute;
+  bottom: -15rem;
+  left: -22rem;
+  transform: rotate(22deg);
+  z-index: -1;
 }
 
 .rsvp .container {
   max-width: 500px;
-  padding: 0 2.7%;
+  padding: 2.7%;
   margin: auto;
+  background-color: var(--trans-blue-light);
 }
 
 .rsvp h2 {
   font-size: 10rem;
   margin-bottom: 4rem;
   line-height: 1;
+  color: var(--blue)
 }
 
 .form-item {
@@ -35,7 +50,7 @@ input[type=text] {
   width: 100%;
   padding: 0.5rem 0.6rem;
   background-color: transparent;
-  color: var(--white);
+  color: var(--blue);
   border: none;
   border-bottom: 2px solid var(--real-white);
   border-top-left-radius: 5px;
@@ -45,7 +60,10 @@ input[type=text] {
 
 input[type=text]::placeholder {
   font-family: var(--readable-font);
-  color: var(--trans-white)
+  color: var(--blue-selected)
+}
+input[type=text]:focus::placeholder {
+  color: var(--trans-white-4);
 }
 
 input[type=text].error {
@@ -55,7 +73,8 @@ input[type=text].error {
 input:active,
 input:focus {
   outline: none;
-  background-color: var(--blue-selected)
+  background-color: var(--blue-selected);
+  color: var(--real-white);
 }
 
 input[type=radio] {
@@ -74,6 +93,10 @@ label + label {
   margin-left: 1rem;
 }
 
+label:focus-within {
+  color: var(--white);
+}
+
 .radio-label:focus-within,
 .select-label:focus-within {
   background-color: var(--blue-selected);
@@ -87,12 +110,16 @@ select {
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
-  color: var(--white);
+  color: var(--blue);
   padding: 0.4rem 0.75rem;
   padding-right: 0.65rem;
 }
 .sel-1 {
   padding-right: 0.55rem;
+}
+
+select:focus {
+  color: var(--white)
 }
 
 select:disabled,
@@ -103,6 +130,10 @@ select:disabled,
 
 input[name=song] {
   margin-top: 0.75rem;
+}
+
+label.song-input:focus-within {
+  color: var(--blue);
 }
 
 .is-loading.is-loading {
@@ -142,8 +173,8 @@ input[name=song] {
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   display: inline-block;
-  /* color: var(--red);
-  font-family: var(--readable-font) */
+  color: var(--white);
+  /* font-family: var(--readable-font) */
 }
 
 .error-message pre {
