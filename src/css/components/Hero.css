@@ -1,3 +1,22 @@
+.hero-title {
+  padding-bottom: 0;
+  position: relative;
+}
+
+.hero-title::before {
+  content: var(--leaf-big);
+  position: absolute;
+  top: -15rem;
+  right: -10rem;
+  transform: rotate(15deg);
+  z-index: -1;
+}
+
+.hero-title .content {
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.66);
+}
+
 .timer-container {
   display: flex;
   flex-direction: row;

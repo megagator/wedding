@@ -11,6 +11,10 @@
   margin-bottom: 0;
 }
 
+.dinner {
+  font-family: var(--header-font)
+}
+
 .address {
   font-size: 1.125rem;
   color: var(--dark);

@@ -7,7 +7,7 @@
 
 body {
   background-color: white;
-  background-image: var(--texture);
+  background-image: var(--texture-paper);
   font-family: var(--readable-font);
   color: var(--blue);
   /* min-height: 100vh; */

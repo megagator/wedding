@@ -6,6 +6,7 @@ class LocationDetails extends PureComponent {
     return (
       <div className='details'>
         <h3 className='title'>Ceremony & Reception</h3>
+        <p className='dinner'>Dinner will be served</p>
         <div className='vcard'>
           <p className='address'>
             <span className='name'>Winter Park Farmers' Market</span><br />

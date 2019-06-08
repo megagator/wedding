@@ -1,6 +1,7 @@
 :root {
-  --blue: #3D7496;
+  --blue: #4C7390;
   --blue-selected: hsl(203, 42%, 55%);
+  --blue-light: #C8DBE7;
   --red: #963D48;
   --brown: #965F3D;
   --gold: #96893d;
@@ -17,7 +18,11 @@
   --readable-font: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
 
   /* relative to this file */
-  --texture: url('../images/sandpaper.png');
+  --texture-paper: url('../images/sandpaper.png');
+  --texture-board: url('../images/cardboard.png');
+  --leaf: url('../images/wc-leaf-short.png');
+  --leaf-big: url('../images/wc-leaf-long.png');
+  --watercolor: url('../images/wc.png');
 }
 
 

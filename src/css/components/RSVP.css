@@ -1,5 +1,6 @@
 .rsvp {
   background-color: var(--blue);
+  /* background-image: var(--texture-board); */
   color: white;
   padding-top: 2rem;
   font-size: 1.25rem;

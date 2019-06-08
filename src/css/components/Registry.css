@@ -3,7 +3,7 @@
 
 .registry {
   background-color: var(--brown);
-  background-image: var(--texture);
+  background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.333) 100%), var(--texture-board);
 }
 
 .registry .container {
