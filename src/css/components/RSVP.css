@@ -140,7 +140,7 @@ select:focus {
 
 select:disabled,
 .disabled-select {
-  color: var(--grey);
+  color: var(--trans-grey);
   cursor: not-allowed;
 }
 
@@ -203,7 +203,7 @@ label.song-input:focus-within {
 
 .submit-help {
   font-family: var(--readable-font);
-  background-color: var(--grey);
+  background-color: var(--trans-grey);
   padding: 0.8rem 1rem;
   margin: 2rem 0;
   font-size: 1.125rem;

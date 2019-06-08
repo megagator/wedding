@@ -10,7 +10,7 @@
   .hero-title .content {
     backdrop-filter: blur(3px) saturate(125%);
     background-color: var(--trans-white-6);
-  }  
+  }
 }
 
 .de-emphasize {
