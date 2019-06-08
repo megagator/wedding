@@ -45,6 +45,6 @@
 
 @media (max-width: 768px) {
   .mapbox {
-    /* height: 40vh; */
+    height: 90vh;
   }
 }
