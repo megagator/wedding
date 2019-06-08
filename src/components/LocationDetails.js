@@ -14,7 +14,7 @@ class LocationDetails extends PureComponent {
             <span className='postal-code'>32789</span><br />
             <a target='_blank' rel='noopener noreferrer' href='https://cityofwinterpark.org/departments/parks-recreation/farmers-market/'>Winter Park Farmers' Market</a>
           </p>
-          <a className='button' href='https://maps.apple.com'>Directions</a>
+          <a className='button' href='http://maps.apple.com/?daddr=200+W+New+England+Avenue+Winter+Park+Florida+32789'>Directions</a>
         </div>
       </div>
     )
