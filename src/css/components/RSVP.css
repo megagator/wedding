@@ -82,7 +82,7 @@ input[type=text] {
 
 input[type=text]::placeholder {
   font-family: var(--readable-font);
-  color: var(--blue-selected)
+  color: var(--blue-selected);
 }
 input[type=text]:focus::placeholder {
   color: var(--trans-white-4);
@@ -222,4 +222,13 @@ label.song-input:focus-within {
 }
 .submit-help a {
   color: var(--white)
+}
+
+@media (max-width: 500px) {
+  .rsvp {
+    text-align: center;
+  }
+  input {
+    text-align: center;
+  }
 }
