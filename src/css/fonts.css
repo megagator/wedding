@@ -1,11 +1,13 @@
 @font-face {
   font-family: 'Cinzel';
+  font-display: auto;
   src: url('../fonts/Cinzel.woff2'),
        url('../fonts/Cinzel.woff'),
        url('../fonts/Cinzel.ttf')
 }
 @font-face {
   font-family: 'Notera';
+  font-display: auto;
   src: url('../fonts/Notera.woff2'),
        url('../fonts/Notera.woff'),
        url('../fonts/Notera.ttf')
