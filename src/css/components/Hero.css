@@ -4,15 +4,21 @@
 
 .hero-title .content {
   padding: 1rem 0;
-  background-color: var(--trans-white-6)
+}
+
+@media (max-width: 1260px) {
+  .hero-title .content {
+    backdrop-filter: blur(3px) saturate(125%);
+    background-color: var(--trans-white-6);
+  }  
 }
 
 .de-emphasize {
+  display: block;
   font-family: var(--cursive-font);
   color: var(--grey);
   font-size: 3rem;
-  margin-left: 0.2rem;
-  margin-right: 0.5rem;
+  margin-top: -1rem;
 }
 
 .timer-container {
