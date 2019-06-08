@@ -57,3 +57,14 @@ h3 {
     font-size: 8vw;
   }
 }
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi) { 
+  h1, h3 {
+    letter-spacing: -0.1ex;
+  }
+
+  h2 {
+    letter-spacing: -0.25ex;
+  }
+}
