@@ -10,6 +10,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 1200px) { /* when LocationDetails box falls below map */
+  .rsvp {
+    padding-top: 14rem;
+  }
+}
+
 .rsvp::before {
   content: '';
   background-image: var(--watercolor);

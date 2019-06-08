@@ -1,11 +1,6 @@
 .map {
   padding: 0;
   position: relative;
-  background-color: var(--blue-light);
-  background-image: var(--watercolor);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right center;
 }
 
 .mapbox {
