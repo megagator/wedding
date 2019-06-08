@@ -8,11 +8,27 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-
 }
 
 .rsvp::before {
+  content: '';
+  background-image: var(--watercolor);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  opacity: 0.75;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.rsvp::after {
   content: var(--leaf);
+  opacity: 0.75;
   position: absolute;
   bottom: -15rem;
   left: -22rem;

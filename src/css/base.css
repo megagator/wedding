@@ -24,6 +24,7 @@ main {
 main::before {
   content: var(--leaf-big);
   position: absolute;
+  opacity: 0.95;
   top: -15rem;
   right: -10rem;
   transform: rotate(15deg);
