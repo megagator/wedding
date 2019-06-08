@@ -38,6 +38,10 @@
 }
 
 @media (max-width: 475px) {
+  .registry {
+    padding: 8rem 0;
+  }
+
   .registry .container { 
     flex-wrap: wrap;
     justify-content: center;
