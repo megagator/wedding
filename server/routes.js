@@ -1,4 +1,5 @@
 const Rsvp = require('./Rsvp')
+const { makeHtmlTable, makeCsv } = require('./builder')
 
 async function add (json, ip, agent) {
   const params = {
@@ -13,7 +14,13 @@ async function add (json, ip, agent) {
 }
 
 async function list () {
+  const data = await Rsvp.getAll()
+  return makeHtmlTable(data)
+}
 
+async function csv () {
+  const data = await Rsvp.getAll()
+  return makeCsv(data)
 }
 
 function validateString (value, field) {
@@ -41,4 +48,4 @@ function validateGuests (guests) {
   return guests
 }
 
-module.exports = { add, list }
+module.exports = { add, list, csv }

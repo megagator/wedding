@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 
-const { add, list } = require('./server/routes')
+const { add, list, csv } = require('./server/routes')
 
 app.use(express.static(path.join(__dirname, 'build')))
 app.get('/', (req, res) => {
@@ -24,6 +24,12 @@ app.post('/rsvp/add', async (req, res) => {
 
 app.get('/rsvp/list', async (req, res) => {
   const result = await list()
+  res.send(result)
+})
+app.get('/rsvp/csv', async (req, res) => {
+  const result = await csv()
+  res.set('Content-Type', 'text/csv')
+  res.attachment(`rsvps_${new Date().getTime()}.csv`)
   res.send(result)
 })
 
