@@ -47,7 +47,7 @@ class EventTime extends Component {
     if (this.state.twentyFourHourTime) {
       return <span className='help' onClick={this.swap} onMouseEnter={this.swap} onMouseLeave={this.swap}>Eighteen Hundred Thirty</span>
     } else {
-      return <span className='help' onClick={this.swap} onMouseEnter={this.swap} onMouseLeave={this.swap}>Six Thirty Post Merian</span>
+      return <span className='help' onClick={this.swap} onMouseEnter={this.swap} onMouseLeave={this.swap}>Six Thirty Post Meridiem</span>
     }
   }
 }
