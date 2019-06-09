@@ -22,11 +22,11 @@ app.post('/rsvp/add', async (req, res) => {
   }
 })
 
-app.get('/rsvp/list', async (req, res) => {
+app.get('/data/list', async (req, res) => {
   const result = await list()
   res.send(result)
 })
-app.get('/rsvp/csv', async (req, res) => {
+app.get('/data/csv', async (req, res) => {
   const result = await csv()
   res.set('Content-Type', 'text/csv')
   res.attachment(`rsvps_${new Date().getTime()}.csv`)
