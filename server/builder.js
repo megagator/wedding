@@ -17,6 +17,10 @@ function makeHtmlTable (data) {
   data.forEach(entry => {
     tableBody += '<tr>'
     for (let key in entry) {
+      if (entry[key] === null) {
+        entry[key] = ''
+      }
+
       if (key === 'attending') {
         if (entry[key] === 1) {
           tableBody += '<td>Yes</td>'
