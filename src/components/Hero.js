@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component, PureComponent } from 'react'
 import hero from '../images/save-the-date.jpg'
 import '../css/components/Hero.css'
 // import leaf from '../images/wc-leaf-long.png'
@@ -12,7 +12,7 @@ class Hero extends PureComponent {
           <div className='content'>
             <h1>Hannah & Mike</h1>
             <h2 className='dark'>are getting hitched</h2>
-            <h3>August 3rd, 2019 <span className='de-emphasize'>at</span> Eighteen Hundred Thirty</h3>
+            <h3>August 3rd, 2019 <span className='de-emphasize'>at</span> <EventTime /></h3>
           </div>
         </section>
         <section className='hero'>
@@ -25,6 +25,30 @@ class Hero extends PureComponent {
         </section>
       </>
     )
+  }
+}
+
+class EventTime extends Component {
+  constructor () {
+    super()
+
+    this.state = {
+      twentyFourHourTime: true
+    }
+  }
+
+  swap = () => {
+    this.setState({
+      twentyFourHourTime: !this.state.twentyFourHourTime
+    })
+  }
+
+  render () {
+    if (this.state.twentyFourHourTime) {
+      return <span className='help' onClick={this.swap} onMouseEnter={this.swap} onMouseLeave={this.swap}>Eighteen Hundred Thirty</span>
+    } else {
+      return <span className='help' onClick={this.swap} onMouseEnter={this.swap} onMouseLeave={this.swap}>Six Thirty Post Merian</span>
+    }
   }
 }
 

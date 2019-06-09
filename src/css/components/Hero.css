@@ -21,6 +21,10 @@
   margin-top: -1rem;
 }
 
+.help {
+  cursor: help;
+}
+
 .timer-container {
   display: flex;
   flex-direction: row;
