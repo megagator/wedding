@@ -3,6 +3,7 @@ import Hero from './Hero'
 import Registry from './Registry'
 import Map from './Map'
 import RSVP from './RSVP'
+import Carousel from './Carousel'
 import Footer from './Footer'
 
 class App extends PureComponent {
@@ -10,9 +11,10 @@ class App extends PureComponent {
     return (
       <main>
         <Hero />
-        <Registry />
         <Map />
         <RSVP />
+        <Registry />
+        <Carousel />
         <Footer />
       </main>
     )
