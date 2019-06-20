@@ -27,6 +27,7 @@
 .carousel-image-cell p {
   color: var(--white);
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .flickity-page-dots {
@@ -35,6 +36,14 @@
 
 .flickity-page-dots .dot {
   background: var(--white)
+}
+
+.flickity-button {
+  background-color: var(--trans-white-6);
+}
+
+.flickity-button-icon {
+  fill: var(--dark);
 }
 
 

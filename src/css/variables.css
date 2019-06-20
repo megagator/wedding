@@ -13,6 +13,7 @@
   --real-white:#fff;
   --trans-white-4: rgba(255, 255, 255, 0.4);
   --trans-white-6: rgba(255, 255, 255, 0.66);
+  --trans-white-9: rgba(255, 255, 255, 0.9);
   --dark: #111;
   --trans-dark: rgba(46, 47, 47, 0.7);
 
@@ -26,6 +27,28 @@
   --leaf: url('../images/wc-leaf-short.png');
   --leaf-big: url('../images/wc-leaf-long.png');
   --watercolor: url('../images/wc.jpg');
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: hsl(206, 41%, 30%);
+    --trans-blue-light: hsla(203, 8%, 33%, 0.5);
+    --brown: hsl(23, 42%, 21%);
+
+    --grey: #b5ada5;
+    --trans-grey: rgb(181, 173, 165, 0.5);
+    --white: #111113;
+    --real-white:#000;
+    --trans-white-4: rgba(0, 0, 0, 0.4);
+    --trans-white-6: rgba(0, 0, 0, 0.66);
+    --trans-white-9: rgba(0, 0, 0, 0.9);
+    --dark: #eee;
+    --trans-dark: rgb(209, 208, 208, 0.7);
+    
+    --texture-paper: ;
+  }
 }
 
 

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--white);
   background-image: var(--texture-paper);
   font-family: var(--readable-font);
   color: var(--blue);
@@ -30,6 +30,12 @@ main::before {
   right: -10rem;
   transform: rotate(15deg);
   z-index: -1;
+}
+
+@media (prefers-color-scheme: dark) {
+  main::before {
+    opacity: 0.5;
+  } 
 }
 
 section {

@@ -32,6 +32,7 @@
   z-index: -1;
 }
 
+
 .rsvp::after {
   content: var(--leaf);
   opacity: 0.75;
@@ -40,6 +41,15 @@
   left: -22rem;
   transform: rotate(22deg);
   z-index: -1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .rsvp::before {
+    filter: invert(100%) saturate(20%);
+  }
+  .rsvp::after {
+    opacity: 0.4;
+  }
 }
 
 .rsvp .container {
