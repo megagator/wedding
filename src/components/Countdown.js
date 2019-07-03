@@ -10,10 +10,9 @@ class Countdown extends Component {
 
     this.io = null
     this.cdContainer = createRef()
-    this.happyDay = '2019-08-03 18:30:00'
+    this.happyDay = '2019-08-03T18:30:00-04:00'
     this.state = {
       paused: false,
-      month: null,
       day: null,
       hour: null,
       minute: null,
@@ -71,21 +70,19 @@ class Countdown extends Component {
     const now = moment()
     const date = moment(this.happyDay)
     const timeDiff = moment.duration(date.diff(now))
-    const timeDiffFormated = timeDiff.format('M D H m s SSS').split(' ')
+    const timeDiffFormated = timeDiff.format('D H m s SSS').split(' ')
 
     this.setState({
-      month: timeDiffFormated[0],
-      day: timeDiffFormated[1],
-      hour: timeDiffFormated[2],
-      minute: timeDiffFormated[3],
-      second: timeDiffFormated[4]
+      day: timeDiffFormated[0],
+      hour: timeDiffFormated[1],
+      minute: timeDiffFormated[2],
+      second: timeDiffFormated[3]
     })
   }
 
   render () {
     return (
       <div ref={this.cdContainer} className='countdown'>
-        <CountdownItem number={this.state.month} measrument='month' />
         <CountdownItem number={this.state.day} measrument='day' />
         <CountdownItem number={this.state.hour} measrument='hour' />
         <CountdownItem number={this.state.minute} measrument='minute' />
