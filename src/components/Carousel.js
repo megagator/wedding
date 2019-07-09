@@ -53,7 +53,7 @@ class Carousel extends PureComponent {
             <div className='carousel-image-cell'><img src={img2} alt={`Hannah's 2017 Christmas Choir`} /><p>Hannah's 2017 Christmas Choir</p></div>
             <div className='carousel-image-cell'><img src={img3} alt='Visiting Hannah over Christmas break at the Orlando Wetlands Park' /><p>Visiting Hannah over Christmas break at the Orlando Wetlands Park</p></div>
             <div className='carousel-image-cell'><img src={img4} alt='James!' /><p>James!</p></div>
-            <div className='carousel-image-cell'><img src={img5} alt='The geologist finds coal in Tennesse' /><p>The geologist finds coal in Tennesse</p></div>
+            <div className='carousel-image-cell'><img src={img5} alt='The geologist finds coal in Tennessee' /><p>The geologist finds coal in Tennessee</p></div>
             <div className='carousel-image-cell'><img src={img6} alt='Cabin spring vacationing in North Carolina' /><p>Cabin spring vacationing in North Carolina</p></div>
             <div className='carousel-image-cell'><img src={img7} alt='...flower' /><p>...flower</p></div>
             <div className='carousel-image-cell'><img src={img8} alt='Stoker family Top Golfing' /><p>Stoker family Top Golf-ing</p></div>
