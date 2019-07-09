@@ -59,6 +59,12 @@
   background-color: var(--trans-blue-light);
 }
 
+@media (prefers-color-scheme: dark) {
+  .rsvp .container {
+    background-color: var(--trans-white-9);
+  }
+}
+
 .rsvp h2 {
   font-size: 10rem;
   margin-bottom: 4rem;

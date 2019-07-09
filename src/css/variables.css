@@ -34,7 +34,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --blue: hsl(206, 41%, 30%);
-    --trans-blue-light: hsla(203, 8%, 33%, 0.5);
+    --trans-blue-light: hsla(203, 8%, 33%, 0.85);
     --brown: hsl(23, 42%, 21%);
 
     --grey: #b5ada5;
