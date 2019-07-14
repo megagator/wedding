@@ -42,8 +42,10 @@ class Countdown extends Component {
       threshold: [0, 0.1]
     }
 
-    this.io = new window.IntersectionObserver(this.checkIfCountDownIsVisible, options)
-    this.io.observe(this.cdContainer.current)
+    if (window.IntersectionObserver) {
+      this.io = new window.IntersectionObserver(this.checkIfCountDownIsVisible, options)
+      this.io.observe(this.cdContainer.current)
+    }
   }
 
   checkIfCountDownIsVisible = (entries, observer) => {
