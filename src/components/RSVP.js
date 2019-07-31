@@ -202,7 +202,7 @@ class RSVP extends Component {
       <>
         <section className='rsvp'>
           <h2 className='light'>rsvp</h2>
-          <div className='container'>
+          <div className='container disabled'>
             <p>Kindly RSVP by July 13, 2019</p>
             <form onSubmit={this.validateAndSend}>
               <div className='form-item'>

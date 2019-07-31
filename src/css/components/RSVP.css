@@ -57,6 +57,30 @@
   padding: 2.7%;
   margin: auto;
   background-color: var(--trans-blue-light);
+  position: relative;
+}
+
+.rsvp .container.disabled::after {
+  content: 'RSVPs are now closed';
+  position: absolute;
+  background-color: var(--trans-white-9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--blue);
+  font-size: 2rem;
+  text-align: center;
+  z-index: 10;
+  padding: 9rem 1rem 1rem;
+  box-sizing: border-box;
+}
+
+@supports( backdrop-filter: blur(4px)) {
+  .rsvp .container.disabled::after {
+    background-color: var(--trans-white-4);
+    backdrop-filter: blur(5px)
+  }
 }
 
 @media (prefers-color-scheme: dark) {

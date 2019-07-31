@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
 app.set('trust proxy', true)
 app.use(express.json())
 app.post('/rsvp/add', async (req, res) => {
+  res.status(403)
+  res.send(`{"error": "RSVPs are closed. Thanks for trying!"}`)
+  return
+
   const ip = (req.headers['x-forwarded-for'] || req.connection.remoteAddress || '').split(',')[0].trim()
   try {
     const result = await add(req.body, ip, req.headers['user-agent'])
